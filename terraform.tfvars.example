@@ -1,0 +1,13 @@
+# cp terraform.tfvars.example terraform.tfvars   (terraform.tfvars is git-ignored)
+
+region       = "sa-east-1"
+sender_email = "no-reply@example.com"
+
+# Recommended: verify the whole domain (DKIM, SPF, DMARC). Comment out to verify only sender_email.
+domain = "example.com"
+
+# If the domain is hosted in Route 53, every DNS record is created for you.
+# route53_zone_id = "Z0123456789ABCDEFGHIJ"
+
+# While the account is in the SES sandbox, recipients must be verified too.
+test_recipients = ["you@gmail.com"]
